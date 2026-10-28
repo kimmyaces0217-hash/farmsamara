@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Areas We Serve | Amarah Farms</title>
+  <meta name="description" content="Explore Amarah Farms delivery areas, delivery routes and outlets for chicken and seafood across Nairobi.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/areas.css">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+  <script src="js/app.js" defer></script>
+  <script src="js/areas.js" defer></script>
+</head>
+
+<body>
+
+ <!-- SHARED HEADER AND CART -->
+<div id="site-header"></div>
+
+
+  <!-- HERO -->
+  <section class="areas-hero">
+
+    <div class="areas-hero-overlay"></div>
+
+    <div class="areas-hero-content">
+
+      <span class="areas-eyebrow">FRESHNESS, DELIVERED CLOSER</span>
+
+      <h1>From Our Store<br>to Your Door.</h1>
+
+      <p>
+        Bringing quality chicken and seafood closer to homes,
+        restaurants and businesses across Nairobi. Explore our
+        service areas and contact us to arrange your delivery.
+      </p>
+
+      <div class="areas-hero-buttons">
+        <a href="#delivery-zones" class="areas-btn areas-btn-red">
+          Explore Delivery Areas
+        </a>
+
+        <a href="products.html" class="areas-btn areas-btn-outline">
+          Shop Our Products
+        </a>
+      </div>
+
+      <div class="areas-hero-note">
+        <span></span>
+        Chicken & Seafood · Convenient Ordering · Nairobi
+      </div>
+
+    </div>
+
+    <div class="areas-hero-label">
+      <span>AMARAH FARMS</span>
+      <small>Fresh. Healthy. Delicious.</small>
+    </div>
+
+  </section>
+
+
+  <!-- INTRODUCTION -->
+  <section class="areas-intro section-space">
+
+    <div class="areas-intro-copy">
+      <span class="areas-kicker">WHERE WE DELIVER</span>
+
+      <h2>Good Food Should Be Within Reach</h2>
+
+      <p>
+        Whether you're preparing a family meal, stocking your
+        restaurant kitchen or ordering for your business, Amarah
+        Farms makes it easier to access chicken and seafood.
+      </p>
+
+      <p>
+        Our service areas are organised into delivery zones to help
+        customers identify their neighbourhood and enquire about
+        convenient delivery arrangements.
+      </p>
+
+      <a href="#contact-us" class="areas-inline-link">
+        Check delivery availability <span>→</span>
+      </a>
+    </div>
+
+    
+<div class="areas-intro-image areas-live-map-container">
+
+  <div
+    id="nairobiDeliveryMap"
+    role="application"
+    aria-label="Interactive map of Nairobi delivery areas"
+  ></div>
+
+  <div class="areas-image-caption">
+    <span class="areas-caption-icon">
+      <img src="img/areasnai.jpg" alt="">
+    </span>
+
+    <div>
+      <strong>Explore Nairobi</strong>
+      <span>Zoom in and find your neighbourhood</span>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+
+
+  <!-- SERVICE AREA SUMMARY -->
+  <section class="areas-summary">
+
+    <div class="areas-summary-inner">
+
+      <div class="areas-summary-item">
+        <span class="areas-summary-icon">
+          <img src="img/nairobi.png" alt="">
+        </span>
+        <div>
+          <strong>Nairobi</strong>
+          <span>Our service region</span>
+        </div>
+      </div>
+
+      <div class="areas-summary-item">
+        <span class="areas-summary-icon">
+          <img src="img/zones.png" alt="">
+        </span>
+        <div>
+          <strong>Delivery Zones</strong>
+          <span>Grouped by neighbourhood</span>
+        </div>
+      </div>
+
+      <div class="areas-summary-item">
+        <span class="areas-summary-icon">
+          <img src="img/outlet.png" alt="">
+        </span>
+        <div>
+          <strong>Outlet Information</strong>
+          <span>Contact us for locations</span>
+        </div>
+      </div>
+
+      <div class="areas-summary-item">
+        <span class="areas-summary-icon">
+          <img src="img/seafc.png" alt="">
+        </span>
+        <div>
+          <strong>Chicken & Seafood</strong>
+          <span>One convenient destination</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DELIVERY ZONES -->
+  <section class="delivery-zones-section section-space"
+           id="delivery-zones">
+
+    <div class="areas-section-heading">
+      <span class="areas-kicker">OUR DELIVERY NETWORK</span>
+      <h2>Explore Our Delivery Areas</h2>
+      <p>
+        Find your neighbourhood below. Contact our team to confirm
+        availability, delivery fees and estimated arrival times
+        for your specific address.
+      </p>
+    </div>
+
+    <div class="delivery-zones-grid">
+
+      <!-- ZONE 1 -->
+      <article class="delivery-zone-card">
+        <div class="zone-image">
+          <img src="img/west.jpg"
+               alt="Westlands neighbourhood">
+          <span class="zone-number">01</span>
+          <span class="zone-badge">Zone 01</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">WESTERN NAIROBI</span>
+          <h3>Westlands & Surroundings</h3>
+          <p>
+            Convenient ordering for homes, offices, restaurants
+            and other customers around the Westlands area.
+          </p>
+
+          <div class="zone-locations">
+            <span>Westlands</span>
+            <span>Parklands</span>
+            <span>Spring Valley</span>
+            <span>Kangemi</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Enquire about delivery <span>→</span>
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ZONE 2 -->
+      <article class="delivery-zone-card">
+        <div class="zone-image">
+          <img src="img/kilimani.jpg"
+               alt="Kilimani neighbourhood">
+          <span class="zone-number">02</span>
+          <span class="zone-badge">Zone 02</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">CENTRAL NAIROBI</span>
+          <h3>Kilimani & Surroundings</h3>
+          <p>
+            A convenient option for customers ordering chicken
+            and seafood for everyday meals and business use.
+          </p>
+
+          <div class="zone-locations">
+            <span>Kilimani</span>
+            <span>Kileleshwa</span>
+            <span>Lavington</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Enquire about delivery <span>→</span>
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ZONE 3 -->
+      <article class="delivery-zone-card">
+        <div class="zone-image">
+          <img src="img/karen.jfif"
+               alt="Karen neighbourhood">
+          <span class="zone-number">03</span>
+          <span class="zone-badge">Zone 03</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">SOUTHERN NAIROBI</span>
+          <h3>Karen & Surroundings</h3>
+          <p>
+            Contact our team to coordinate orders and establish
+            delivery availability for your location.
+          </p>
+
+          <div class="zone-locations">
+            <span>Karen</span>
+            <span>Nearby neighbourhoods</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Enquire about delivery <span>→</span>
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ZONE 4 -->
+      <article class="delivery-zone-card">
+        <div class="zone-image">
+          <img src="img/gigiri.jpg"
+               alt="Runda and Gigiri neighbourhood">
+          <span class="zone-number">04</span>
+          <span class="zone-badge">Zone 04</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">NORTHERN NAIROBI</span>
+          <h3>Runda & Gigiri</h3>
+          <p>
+            Ask about delivery to residential areas, offices
+            and businesses within our northern service region.
+          </p>
+
+          <div class="zone-locations">
+            <span>Runda</span>
+            <span>Gigiri</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Enquire about delivery <span>→</span>
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ZONE 5 -->
+      <article class="delivery-zone-card">
+        <div class="zone-image">
+          <img src="img/roysambu.jfif"
+               alt="Roysambu neighbourhood">
+          <span class="zone-number">05</span>
+          <span class="zone-badge">Zone 05</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">NORTH-EASTERN NAIROBI</span>
+          <h3>Roysambu & Surroundings</h3>
+          <p>
+            Enquire about available delivery options for
+            household purchases and larger product orders.
+          </p>
+
+          <div class="zone-locations">
+            <span>Roysambu</span>
+            <span>Nearby areas on request</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Enquire about delivery <span>→</span>
+          </a>
+        </div>
+      </article>
+
+
+      <!-- ZONE 6 -->
+      <article class="delivery-zone-card zone-custom">
+        <div class="zone-image">
+          <img src="img/cj.jpg"
+               alt="Business customer preparing an order">
+          <span class="zone-number">06</span>
+          <span class="zone-badge">Business Orders</span>
+        </div>
+
+        <div class="zone-content">
+          <span class="zone-kicker">BULK & BUSINESS ORDERS</span>
+          <h3>Restaurants & Businesses</h3>
+          <p>
+            Restaurants, caterers and businesses can enquire about
+            product quantities, supply arrangements and delivery.
+          </p>
+
+          <div class="zone-locations">
+            <span>Restaurants</span>
+            <span>Caterers</span>
+            <span>Retailers</span>
+          </div>
+
+          <a href="#contact-us" class="zone-link">
+            Discuss your order <span>→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="areas-disclaimer">
+      Delivery zones are illustrative groupings, not confirmed daily
+      routes. Availability, fees, delivery days and timings should
+      be confirmed with Amarah Farms before ordering.
+    </p>
+
+  </section>
+
+
+  <!-- DELIVERY ROUTES -->
+  <section class="delivery-routes-section">
+
+    <div class="routes-inner">
+
+      <div class="routes-heading">
+        <span class="areas-kicker">HOW DELIVERY WORKS</span>
+
+        <h2>Organised Routes.<br>Convenient Ordering.</h2>
+
+        <p>
+          We can coordinate delivery enquiries by neighbourhood
+          to help organise orders efficiently. The route examples
+          below are planning suggestions, not live tracking or
+          guaranteed delivery schedules.
+        </p>
+
+        <a href="products.html" class="areas-btn areas-btn-red">
+          Shop Our Products
+        </a>
+      </div>
+
+      <div class="route-list">
+
+        <article class="route-item">
+          <div class="route-marker">01</div>
+
+          <div class="route-details">
+            <span>WESTERN ROUTE EXAMPLE</span>
+            <h3>Westlands → Parklands → Spring Valley</h3>
+            <p>
+              A possible grouping for orders within neighbouring
+              western and north-western areas.
+            </p>
+          </div>
+
+          <span class="route-tag">Illustrative</span>
+        </article>
+
+        <article class="route-item">
+          <div class="route-marker">02</div>
+
+          <div class="route-details">
+            <span>CENTRAL ROUTE EXAMPLE</span>
+            <h3>Kilimani → Kileleshwa → Lavington</h3>
+            <p>
+              A possible grouping for customers in central
+              residential neighbourhoods.
+            </p>
+          </div>
+
+          <span class="route-tag">Illustrative</span>
+        </article>
+
+        <article class="route-item">
+          <div class="route-marker">03</div>
+
+          <div class="route-details">
+            <span>NORTHERN ROUTE EXAMPLE</span>
+            <h3>Runda → Gigiri → Roysambu</h3>
+            <p>
+              A suggested planning group; actual routing depends
+              on order locations and delivery arrangements.
+            </p>
+          </div>
+
+          <span class="route-tag">Illustrative</span>
+        </article>
+
+        <article class="route-item">
+          <div class="route-marker">04</div>
+
+          <div class="route-details">
+            <span>SOUTHERN ROUTE EXAMPLE</span>
+            <h3>Karen & Nearby Locations</h3>
+            <p>
+              Delivery availability and coordination confirmed
+              individually with customers.
+            </p>
+          </div>
+
+          <span class="route-tag">On enquiry</span>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OUTLETS -->
+  <section class="outlets-section section-space">
+
+    <div class="areas-section-heading">
+      <span class="areas-kicker">FIND AMARAH FARMS</span>
+      <h2>Our Outlets & Collection Points</h2>
+
+      <p>
+        Looking for a convenient place to shop or collect your order?
+        Contact us for the latest outlet addresses, opening hours
+        and collection arrangements.
+      </p>
+    </div>
+
+    <div class="outlets-grid">
+
+      <article class="outlet-card">
+        <div class="outlet-photo">
+          <img src="img/blue.png"
+               alt="Amarah Farms main shop placeholder">
+          <span>01 · Main Outlet</span>
+        </div>
+
+        <div class="outlet-content">
+          <h3>Amarah Farms Main Outlet</h3>
+
+          <p>
+            <img src="img/location.png" alt="">
+            <span>Ngara-Nairobi</span>
+          </p>
+
+          <p>
+            <img src="img/time.png" alt="">
+            <span>Mon-Sun 24hrs</span>
+          </p>
+
+          <a href="#contact-us" class="outlet-link">
+            Ask for Directions <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="outlet-card outlet-card-teal">
+        <div class="outlet-photo">
+          <img src="img/team del.png"
+               alt="Amarah Farms collection point placeholder">
+          <span>02 · Collection</span>
+        </div>
+
+        <div class="outlet-content">
+          <h3>Order Collection Point</h3>
+
+          <p>
+            <img src="img/delv.png" alt="">
+            <span>Orders collected at any of our branches</span>
+          </p>
+
+          <p>
+            <img src="img/time.png" alt="">
+            <span>6:00AM-8:30pm</span>
+          </p>
+
+          <a href="#contact-us" class="outlet-link">
+            Confirm Collection <span>→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- SHOP CTA -->
+  <section class="areas-shop-cta">
+
+    <div class="areas-shop-cta-image">
+      <img src="img/shop.png"
+           alt="Fresh chicken and seafood selection">
+    </div>
+
+    <div class="areas-shop-cta-content">
+      <span class="areas-kicker">FRESHNESS STARTS HERE</span>
+
+      <h2>Your Favourite Chicken & Seafood, All in One Place</h2>
+
+      <p>
+        Explore our products, select your preferred quantities
+        and get in touch to arrange delivery to your area.
+      </p>
+
+      <a href="products.html" class="areas-btn areas-btn-red">
+        Shop Our Products <span>→</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="areas-contact-section section-space" id="contact-us">
+
+    <div class="areas-contact-inner">
+
+      <div class="areas-contact-copy">
+        <span class="areas-kicker">LET'S GET YOUR ORDER TO YOU</span>
+
+        <h2>Need Delivery to Your Area?</h2>
+
+        <p>
+          Tell us where you are and what you need. Our team can help
+          you enquire about delivery availability, product quantities,
+          outlet directions and business supply arrangements.
+        </p>
+
+        <div class="areas-contact-details">
+
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">
+              <img src="img/location.png" alt="">
+            </span>
+            <div>
+              <strong>Service Region</strong>
+              <span>Nairobi, Kenya</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">
+              <img src="img/whatsapp.png" alt="">
+            </span>
+            <div>
+              <strong>Call or WhatsApp</strong>
+              <span>[Add your official phone number]</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">
+              <img src="img/email.png" alt="">
+            </span>
+            <div>
+              <strong>Email</strong>
+              <span>[Add your official email address]</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <form class="areas-contact-form" id="areasContactForm">
+
+        <div class="areas-form-heading">
+          <span>DELIVERY ENQUIRY</span>
+          <h3>Where Would You Like Us to Deliver?</h3>
+          <p>Complete the details below to prepare your enquiry.</p>
+        </div>
+
+        <div class="areas-form-grid">
+
+          <div class="areas-form-field">
+            <label for="areasName">Full Name *</label>
+            <input type="text"
+                   id="areasName"
+                   name="name"
+                   placeholder="Your name"
+                   autocomplete="name"
+                   required>
+          </div>
+
+          <div class="areas-form-field">
+            <label for="areasPhone">Phone Number *</label>
+            <input type="tel"
+                   id="areasPhone"
+                   name="phone"
+                   placeholder="+254..."
+                   autocomplete="tel"
+                   required>
+          </div>
+
+          <div class="areas-form-field">
+            <label for="areasLocation">Your Area *</label>
+            <select id="areasLocation" name="location" required>
+              <option value="">Select your area</option>
+              <option>Westlands</option>
+              <option>Parklands</option>
+              <option>Spring Valley</option>
+              <option>Kangemi</option>
+              <option>Kilimani</option>
+              <option>Kileleshwa</option>
+              <option>Lavington</option>
+              <option>Karen</option>
+              <option>Runda</option>
+              <option>Gigiri</option>
+              <option>Roysambu</option>
+              <option>Other Nairobi area</option>
+              <option>Outside Nairobi</option>
+            </select>
+          </div>
+
+          <div class="areas-form-field">
+            <label for="areasOrderType">Order Type *</label>
+            <select id="areasOrderType" name="orderType" required>
+              <option value="">Choose order type</option>
+              <option>Household order</option>
+              <option>Restaurant or catering</option>
+              <option>Business or bulk order</option>
+              <option>Outlet collection enquiry</option>
+            </select>
+          </div>
+
+          <div class="areas-form-field full-field">
+            <label for="areasAddress">Delivery Address</label>
+            <input type="text"
+                   id="areasAddress"
+                   name="address"
+                   placeholder="Estate, street or building">
+          </div>
+
+          <div class="areas-form-field full-field">
+            <label for="areasMessage">What Do You Need?</label>
+            <textarea id="areasMessage"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us about your chicken or seafood order, preferred delivery date, or enquiry."></textarea>
+          </div>
+
+        </div>
+
+        <button type="submit" class="areas-submit-button">
+          Prepare WhatsApp Enquiry <span>→</span>
+        </button>
+
+        <p class="areas-form-note">
+          Your details will be placed in a WhatsApp message for you
+          to review and send. Delivery is not confirmed until agreed
+          with Amarah Farms.
+        </p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- SHARED FOOTER -->
+<div id="site-footer"></div>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+<script src="js/nairobi-map.js"></script>
+</body>
+</html>
+
+

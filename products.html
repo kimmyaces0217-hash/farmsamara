@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Amarah Farms</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="products">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero products-hero">
+        <div class="container">
+          <span class="eyebrow light">FRESH CHICKEN & SEAFOOD</span>
+          <h1>Our Products</h1>
+          <p>Quality favourites, prepared with care.</p>
+        </div>
+      </section>
+      <section class="section container product-page-intro">
+        <div>
+          <span class="eyebrow">SHOP OUR RANGE</span>
+          <h2>Choose your favourites</h2>
+          <p>
+            Use the plus and minus controls to choose quantities. Your cart
+            total updates automatically.
+          </p>
+        </div>
+        <div class="product-switch">
+          <a class="switch-btn active" href="#chicken">Chicken Products</a
+          ><a class="switch-btn seafood-switch" href="#seafood"
+            >Seafood Products</a
+          >
+        </div>
+      </section>
+      <section class="product-section chicken-products" id="chicken">
+        <div class="container">
+          <div class="product-section-heading">
+            <div>
+              <span class="eyebrow">FARM FRESH SELECTION</span>
+              <h2>Chicken Products</h2>
+            </div>
+            <span class="section-count">16 products</span>
+          </div>
+          <div class="product-grid" id="chicken-grid"></div>
+        </div>
+      </section>
+      <section class="product-section seafood-products" id="seafood">
+        <div class="container">
+          <div class="product-section-heading">
+            <div>
+              <span class="eyebrow light">OCEAN-FRESH SELECTION</span>
+              <h2>Seafood Products</h2>
+            </div>
+            <span class="section-count light-count">16 products</span>
+          </div>
+          <div class="product-grid" id="seafood-grid"></div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="quick-order">
+          <div>
+            <span class="eyebrow">NEED SOMETHING SPECIFIC?</span>
+            <h2>Make a quick order</h2>
+            <p>
+              Send your details and delivery preferences directly to our team on
+              WhatsApp.
+            </p>
+          </div>
+          <form id="quick-order-form">
+            <div class="form-row">
+              <label
+                >Full name<input
+                  name="name"
+                  required
+                  placeholder="Your full name" /></label
+              ><label
+                >Phone number<input
+                  name="phone"
+                  required
+                  type="tel"
+                  placeholder="+254..."
+              /></label>
+            </div>
+            <div class="form-row">
+              <label
+                >Email address<input
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com" /></label
+              ><label
+                >Preferred delivery location<input
+                  name="location"
+                  required
+                  placeholder="Estate / area"
+              /></label>
+            </div>
+            <label
+              >Order details<textarea
+                name="details"
+                rows="3"
+                placeholder="Tell us what you need"
+              ></textarea></label
+            ><button class="btn btn-red" type="submit">
+              Send quick order on WhatsApp ↗
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
